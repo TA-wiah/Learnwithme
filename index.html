@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Cyber Hatcher.png" type="image/x-icon">
+    <title>Cyber Hatchers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a, nav .dropdown {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover, nav .dropdown:hover {
+            background-color: #FFC107;
+        }
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #575757;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 0;
+            top: 50px;
+        }
+        nav .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        nav .dropdown-content a:hover {
+            background-color: #666;
+        }
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 70px;
+            width: calc(33% - 40px);
+        }
+        .project img {
+            max-width: 100%;
+            max-height: 70%;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .project h3 {
+            margin: 10px 0;
+        }
+        .project p {
+            color: #666;
+        }
+        .project a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project a:hover {
+            background-color: #45a049;
+        }
+        .intro-section {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .intro-section h2 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #444444;
+        }
+        .intro-section p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+        .categories ul, .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        .categories li, .contact li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #333333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer .team, .footer .sponsors {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .footer .team h3, .footer .sponsors h3 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .footer .team img, .footer .sponsors img {
+            width: 37px;
+            height: auto;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 20%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cyber Hatchers Codes</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="snip.html" target="_blank">Learn Basics</a>
+        <div class="dropdown">
+        <a href="#">Projects</a>
+            <div class="dropdown-content">
+                <a href="#">PHP Projects</a>
+                <a href="#">JavaScript Projects</a>
+                <a href="#">Python Projects</a>
+                <a href="#">Java Projects</a>
+                <a href="#">C++ Projects</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <a href="#">Web Development</a>
+                <a href="#">Mobile Development</a>
+                <a href="#">Data Science</a>
+                <a href="#">Machine Learning</a>
+                <a href="#">Game Development</a>
+            </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <div class="intro-section">
+                <h2>Welcome to Cyber Hatchers Hub</h2>
+                <p>Free Projects Codes is your go-to source for free project templates and source code. Whether you are a developer, student, or hobbyist, our extensive collection of projects across various programming languages and fields will help you enhance your skills and complete your projects efficiently.</p>
+                <h2>Explore Our Projects</h2>
+                <p>We offer a wide range of project templates in PHP, JavaScript, Python, Java, and C++. Browse through our categories to find the perfect project for your needs. Our projects are thoroughly tested and come with detailed documentation to help you get started quickly.</p>
+                <h2>Join Our Community</h2>
+                <p>Join our community of developers and learners. Share your own projects, provide feedback, and collaborate with others. Together, we can build a vast repository of resources that benefit everyone. Stay updated with the latest projects and tutorials by connecting with us on our social media channels.
+                <a href="https://www.youtube.com/channel/UCZIBw2LZdsXzqNeds22z_Fg" target="_blank">YouTube</a> and on <a href="">Instagram</a><br>
+                and also join our online school to learn more at an affordable price on <a href="">HatchersCollage</a>
+                </p>
+            
+            </div>
+        </div>
+        <div class="project-list">
+            <div class="project">
+                <img src="dhl.png" alt="Project 1">
+                <h3>Python Package Tracking System</h3>
+                <p>Free source code for a Python Package Tracking System. To track Packages or items when been shipped, and more.</p>
+                <a href="https://github.com/TA-wiah/Package-Tracking-System.git" target="_blank">Download Now</a>
+            </div>
+            <div class="project">
+                <img src="ai.jpg" alt="Project 2">
+                <h3>Abena AI</h3>
+                <p>A fun and interactive ai with Python. That assist in your daily activity and also perform routine tack for you making it advance like J.A.R.V.I.S.</p>
+                <a href="https://github.com/TA-wiah/T-Jay.git" target="_blank">Download Now</a>
+            </div>
+        </div>
+        <div class="sidebar categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">PHP Projects</a></li>
+                <li><a href="#">JavaScript Projects</a></li>
+                <li><a href="#">Python Projects</a></li>
+                <li><a href="#">MySQL Projects</a></li>
+                <li><a href="#">Bootstrap Projects</a></li>
+                <li><a href="#">CyberSecurity</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="team">
+            <h3>Our Partners and Team</h3>
+            <img src="SNIPPETS HD.png" alt="Snippets">
+            <img src="rx.png" alt="Max Rox Studio">
+            <img src="Cyber Hatcher.png" alt="Team Member 3">
+        </div>
+        <div class="sponsors">
+            <h3>Our Sponsors</h3>
+            <img src="sponsor1.jpg" alt="Sponsor 1">
+            <img src="sponsor2.jpg" alt="Sponsor 2">
+            <img src="sponsor3.jpg" alt="Sponsor 3">
+        </div>
+        <p>&copy; 2024 Cyber Hatchers</p>
+    </div>
+</body>
+</html>
